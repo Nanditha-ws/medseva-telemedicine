@@ -210,34 +210,7 @@ static const String baseUrl = 'http://192.168.x.x:5000';
 
 ### Interactive Docs: `http://localhost:5000/api/docs` (Swagger UI)
 
-### Key Endpoints
 
-| Method | Endpoint                      | Auth | Description                    |
-|--------|-------------------------------|------|--------------------------------|
-| POST   | /auth/register                | No   | Register new user              |
-| POST   | /auth/login                   | No   | Login                          |
-| GET    | /auth/me                      | Yes  | Get current user               |
-| POST   | /auth/refresh                 | No   | Refresh token                  |
-| GET    | /users/profile                | Yes  | Get user profile               |
-| PUT    | /users/profile                | Yes  | Update profile                 |
-| GET    | /users/doctors                | Yes  | Search doctors                 |
-| POST   | /appointments                 | Yes  | Book appointment               |
-| GET    | /appointments                 | Yes  | List appointments              |
-| GET    | /appointments/upcoming        | Yes  | Upcoming appointments          |
-| POST   | /medical-records              | Yes  | Create medical record          |
-| GET    | /medical-records              | Yes  | List medical records           |
-| POST   | /medical-records/:id/share    | Yes  | Share with doctor              |
-| GET    | /hospitals                    | No   | Search hospitals               |
-| GET    | /hospitals/nearby             | No   | Find nearby hospitals          |
-| POST   | /medications                  | Yes  | Create medication reminder     |
-| POST   | /medications/:id/log          | Yes  | Log medication taken/missed    |
-| GET    | /medications/:id/adherence    | Yes  | Get adherence report           |
-| POST   | /emergency/generate-code      | Yes  | Generate emergency access code |
-| GET    | /emergency/access/:code       | No   | Access emergency data          |
-| POST   | /documents/scan               | Yes  | Scan document (file upload)    |
-| GET    | /education                    | No   | Get health education articles  |
-
----
 
 ## 🗄️ Database Schema
 
@@ -265,18 +238,4 @@ static const String baseUrl = 'http://192.168.x.x:5000';
 | Doctor   | doctor@medseva.com      | password123  |
 | Hospital | hospital@medseva.com    | password123  |
 
----
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-<div align="center">
-
-**Built with ❤️ for healthcare accessibility**
-
-🏥 MedSeva - Telemedicine for Everyone
-
-</div>
