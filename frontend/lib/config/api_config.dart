@@ -1,11 +1,21 @@
 /// API Configuration
 /// Centralized API endpoints and configuration
+library;
+
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ApiConfig {
-  // Base URL - change for production
-  static const String baseUrl = 'http://10.0.2.2:5000'; // Android emulator
-  // static const String baseUrl = 'http://localhost:5000'; // iOS simulator
-  // static const String baseUrl = 'https://api.medseva.com'; // Production
+  // Base URL - checks platform dynamically
+  static String get baseUrl {
+    if (kIsWeb) {
+      return 'http://localhost:5000';
+    } else if (Platform.isAndroid) {
+      return 'http://10.0.2.2:5000';
+    } else {
+      return 'http://localhost:5000';
+    }
+  }
 
   static const String apiPrefix = '/api';
 

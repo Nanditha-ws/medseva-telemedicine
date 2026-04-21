@@ -1,5 +1,6 @@
 /// MedSeva App Theme Configuration
 /// Premium, modern healthcare-themed design system
+library;
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -75,12 +76,10 @@ class AppTheme {
         primary: primaryColor,
         secondary: secondaryColor,
         surface: cardColor,
-        background: backgroundColor,
         error: accentRed,
         onPrimary: Colors.white,
         onSecondary: Colors.white,
         onSurface: darkText,
-        onBackground: darkText,
       ),
 
       // AppBar
@@ -111,16 +110,7 @@ class AppTheme {
         labelLarge: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white),
       ),
 
-      // Cards
-      cardTheme: CardTheme(
-        elevation: 0,
-        color: cardColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-          side: BorderSide(color: borderColor.withOpacity(0.5)),
-        ),
-        margin: const EdgeInsets.symmetric(vertical: 6),
-      ),
+
 
       // Elevated Buttons
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -230,12 +220,10 @@ class AppTheme {
         primary: primaryLight,
         secondary: secondaryColor,
         surface: darkCard,
-        background: darkBg,
         error: accentRed,
         onPrimary: Colors.white,
         onSecondary: Colors.white,
         onSurface: darkTextPrimary,
-        onBackground: darkTextPrimary,
       ),
 
       appBarTheme: AppBarTheme(
@@ -252,14 +240,7 @@ class AppTheme {
 
       textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
 
-      cardTheme: CardTheme(
-        elevation: 0,
-        color: darkCard,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-          side: BorderSide(color: darkBorder),
-        ),
-      ),
+
 
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(

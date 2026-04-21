@@ -1,5 +1,6 @@
 /// App Router Configuration using GoRouter
 /// Handles all navigation and routing
+library;
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

@@ -1,4 +1,5 @@
 /// Medical Record Model
+library;
 
 class MedicalRecordModel {
   final String id;

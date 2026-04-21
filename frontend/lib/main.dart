@@ -1,5 +1,6 @@
 /// MedSeva - Telemedicine Mobile Application
 /// Main entry point for the Flutter application
+library;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

@@ -1,4 +1,5 @@
 /// Appointment Model
+library;
 
 class AppointmentModel {
   final String id;

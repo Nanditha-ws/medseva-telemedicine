@@ -1,5 +1,6 @@
 /// Authentication Provider
 /// Manages user authentication state
+library;
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';

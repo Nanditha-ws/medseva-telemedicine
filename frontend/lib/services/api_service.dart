@@ -1,5 +1,6 @@
 /// API Service - Central HTTP client for all API calls
 /// Uses Dio with interceptors for auth token management
+library;
 
 import 'dart:convert';
 import 'dart:io';

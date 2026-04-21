@@ -1,4 +1,5 @@
 /// User Model - Represents all user types (patient, doctor, hospital)
+library;
 
 class UserModel {
   final String id;

@@ -1,4 +1,5 @@
 /// Appointment Provider
+library;
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../config/api_config.dart';
@@ -72,14 +73,3 @@ class AppointmentProvider extends ChangeNotifier {
   }
 }
 
-/// Theme Provider
-class ThemeProvider extends ChangeNotifier {
-  ThemeMode _themeMode = ThemeMode.light;
-  ThemeMode get themeMode => _themeMode;
-  bool get isDark => _themeMode == ThemeMode.dark;
-
-  void toggleTheme() {
-    _themeMode = _themeMode == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
-    notifyListeners();
-  }
-}

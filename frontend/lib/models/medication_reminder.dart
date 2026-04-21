@@ -1,4 +1,5 @@
 /// Medication Reminder Model
+library;
 
 class MedicationReminderModel {
   final String id;

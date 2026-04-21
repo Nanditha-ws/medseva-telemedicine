@@ -1,4 +1,5 @@
 /// Add Medication Screen
+library;
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -51,7 +52,9 @@ class _AddMedicationScreenState extends State<AddMedicationScreen> {
       default: count = 1;
     }
     setState(() {
-      while (_times.length < count) _times.add(TimeOfDay(hour: 8 + _times.length * 6, minute: 0));
+      while (_times.length < count) {
+        _times.add(TimeOfDay(hour: 8 + _times.length * 6, minute: 0));
+      }
       if (_times.length > count) _times = _times.sublist(0, count);
     });
   }

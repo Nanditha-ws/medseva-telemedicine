@@ -1,4 +1,5 @@
 /// Profile Screen
+library;
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -124,7 +125,7 @@ class ProfileScreen extends StatelessWidget {
                     trailing: Switch(
                       value: theme.isDark,
                       onChanged: (_) => theme.toggleTheme(),
-                      activeColor: AppTheme.primaryColor,
+                      activeThumbColor: AppTheme.primaryColor,
                     ),
                   ),
                   const Divider(height: 1, indent: 56),

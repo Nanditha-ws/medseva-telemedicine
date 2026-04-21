@@ -1,4 +1,5 @@
 /// Emergency Screen
+library;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../config/app_theme.dart';
@@ -173,13 +174,13 @@ class _EmergencyScreenState extends State<EmergencyScreen> {
               child: Column(
                 children: [
                   SwitchListTile(title: const Text('Medical Records'), value: _shareMedicalRecords,
-                    onChanged: (v) => setState(() => _shareMedicalRecords = v), activeColor: AppTheme.primaryColor),
+                    onChanged: (v) => setState(() => _shareMedicalRecords = v), activeThumbColor: AppTheme.primaryColor),
                   SwitchListTile(title: const Text('Current Medications'), value: _shareMedications,
-                    onChanged: (v) => setState(() => _shareMedications = v), activeColor: AppTheme.primaryColor),
+                    onChanged: (v) => setState(() => _shareMedications = v), activeThumbColor: AppTheme.primaryColor),
                   SwitchListTile(title: const Text('Allergies & Conditions'), value: _shareAllergies,
-                    onChanged: (v) => setState(() => _shareAllergies = v), activeColor: AppTheme.primaryColor),
+                    onChanged: (v) => setState(() => _shareAllergies = v), activeThumbColor: AppTheme.primaryColor),
                   SwitchListTile(title: const Text('Emergency Contacts'), value: _shareEmergencyContacts,
-                    onChanged: (v) => setState(() => _shareEmergencyContacts = v), activeColor: AppTheme.primaryColor),
+                    onChanged: (v) => setState(() => _shareEmergencyContacts = v), activeThumbColor: AppTheme.primaryColor),
                 ],
               ),
             ),

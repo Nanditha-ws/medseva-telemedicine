@@ -1,4 +1,5 @@
 /// Theme Provider
+library;
 import 'package:flutter/material.dart';
 
 class ThemeProvider extends ChangeNotifier {

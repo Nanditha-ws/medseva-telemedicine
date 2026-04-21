@@ -1,4 +1,5 @@
 /// Custom Button Widget with loading state
+library;
 import 'package:flutter/material.dart';
 import '../config/app_theme.dart';
 
